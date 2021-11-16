@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c1e1845990.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Admin User Interface</title>
+</head>
+<body>
+   <div class="mainContainer">
+
+       <div class="titleContainer"> <!--title of the display list-->
+            <h2>ADMIN</h2>
+       </div>
+       
+       <div class="contentContainer">
+           
+            <div class="searchbarContainer">  <!--Search bar to search with any properties-->
+                <div style="width: 40%;">
+                    Select Filter Users: 
+                    <select name="filterOn" id="filterOn" class="dropDownStyle">
+                        <option value="name">Name</option>
+                        <option value="email">Email</option>
+                        <option value="role">Role</option>
+                    </select>
+                </div>
+                <div style="width: 100%;">
+                    <input id="filterUsers" type="text" class="searchbar" placeholder="Search..." onkeyup="filterUserList()">
+                </div>
+            </div>
+           
+            <div class="displayListContainer">  <!--Where the details will be present-->
+
+                <div class="columnTitleContainer">  <!--Column Titles-->
+                    
+                    <div id="allselect " class=""></div>  <!--todo later-->
+                    <div id="nametitle" class="individualBoxStyling"><p>Name</p></div>
+                    <div id="emailtitle" class="individualBoxStyling"><p>Email</p></div>
+                    <div id="roletitle" class="individualBoxStyling"><p>Role</p></div>
+                    <div id="actiontitle" class="individualBoxStyling"><p>Action</p></div>
+
+                </div>
+                <div class="listContainer" id="allUsersContainer">
+                    
+                    
+
+                </div>
+                
+
+            </div>
+           
+            <div class="paginationFooter">
+                
+                <div class="deleteAllContainer" onclick="deleteSelectedUsers()">
+                    <p>Delete Selected</p>
+                </div>
+
+                <div class="paginationContainer">
+                    <ul>
+                        <!-- <li class="previousIcon angleButton"><span><i class="fa fa-solid fa-angle-left"></i></span></li>
+                        <li class="pageNumber active  "><span>1</span></li>
+                        <li class="pageNumber  "><span>2</span></li>
+                        <li class="pageDots  "><span>...</span></li>
+                        <li class="pageNumber  "><span>4</span></li>
+                        <li class="pageNumber  "><span>5</span></li>
+                        <li class="pageDots  "><span>...</span></li>
+                        <li class="pageNumber  "><span>7</span></li>
+                        <li class="nextIcon angleButton"><span><i class="fa fa-solid fa-angle-right"></i></span></li> -->
+                        
+                    </ul>
+                </div> 
+            </div>
+
+       </div>
+
+   </div> 
+
+   <script src="script.js"></script>
+</body>
+</html>
+

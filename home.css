@@ -1,0 +1,155 @@
+body{
+    background-color: #f2faef;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+
+.titleContainer{
+    margin: 5px;
+    padding: 2px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbarContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    align-items: center;
+}
+.dropDownStyle{
+    height: 50px;
+    outline: none;
+    border:none;
+    width: 30%;
+}
+.searchbar{
+    border: none;
+    background-color: #a8d9dd;
+    resize: none;
+    outline: 1px solid grey;
+    width: 70%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+input[type="text"]{
+    border: none;
+    resize: none;
+    outline: none;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]{
+    height: 50px;
+    cursor: pointer;
+    width: auto;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+}
+.individualBoxStyling{
+    /* width: 30%; */
+    padding: 5px;
+}
+
+.displayListContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.columnTitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.individualListContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.highlightIndividualListContainer{
+    background-color: #a8d9dd;
+}
+#actionEntry{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.deleteAllContainer{
+    width: 20%;
+    height: 50px;
+    background-color: #e73845;
+    color: #f2faef;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deleteAllContainer p{
+    margin: 0;
+    padding-top: 15px;
+    align-self: center;
+    text-align: center;
+}
+
+.paginationFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.paginationContainer ul{
+    display: flex;
+}
+
+.paginationContainer ul li.pageDots{
+    cursor: default;
+}
+
+.paginationContainer ul li{
+    list-style: none;
+    border: 1px solid #457b9d;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+    font-size: x-large;
+}
+
+.paginationContainer ul li.active,
+.paginationContainer ul li.pageNumber:hover,
+.paginationContainer ul li.angleButton:hover{
+    background-color: #457b9d;
+    color:#f2faef;
+}
+
